@@ -12,5 +12,6 @@ const itemsController = new ItemsController()
 routes.get('/items', itemsController.index)
 
 routes.post('/points', pointControllers.create)
+routes.get('/points/:id', pointControllers.show)
 
 export default routes
